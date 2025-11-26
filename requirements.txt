@@ -1,0 +1,11 @@
+python-telegram-bot==20.7
+sqlalchemy==2.0.25
+apscheduler==3.10.4
+python-dotenv==1.0.0
+pydantic==2.6.1
+pydantic-settings==2.1.0
+pytz==2024.1
+
+# Опционально: для ИИ-функций (можно установить позже)
+# openai==1.12.0
+

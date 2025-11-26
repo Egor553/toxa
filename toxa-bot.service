@@ -1,0 +1,21 @@
+[Unit]
+Description=Telegram Bot Toxa - Геймификатор рабочих процессов
+After=network.target
+
+[Service]
+Type=simple
+# Замени uXXXXXX на своего пользователя Timeweb
+# Обычно это что-то вроде u1234567
+User=uXXXXXX
+# Замени путь на реальный путь к проекту
+WorkingDirectory=/home/uXXXXXX/domains/yourdomain.com/public_html
+Environment="PATH=/home/uXXXXXX/domains/yourdomain.com/public_html/venv/bin"
+ExecStart=/home/uXXXXXX/domains/yourdomain.com/public_html/venv/bin/python bot/main.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+
